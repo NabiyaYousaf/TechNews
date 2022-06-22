@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: rgb(194, 7, 194);
+}
+
+
+
+.stories_div{
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto ;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  
+}
+.heading{
+  text-align: center;
+  margin: 1rem 0;
+  letter-spacing: 0.5px;
+}
+.main-story{
+  background: #fff;
+  width: 500px;
+  height: 200px;
+  padding:2rem;
+  box-shadow: 2px 2px 2px 2px gainsboro;
+  border-radius: 5px;
+}
+.main-story span{
+  color: gray;
+  font-weight: 500;
+}
+.main-story .buttons{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+.readmore{
+  text-decoration: none;
+  text-transform: capitalize;
+  color: gray;
+  font-weight: bold;
+}
+.remove{
+  text-decoration: none;
+  color: red;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+.remove:hover{
+  text-decoration: underline;
+}
+.search form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+}
+.search form input{
+  padding: 0.5rem ;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+}
+.pagination_btns{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.pagination_btns button{
+  padding: 0.5rem;
+  color: purple;
+  cursor: pointer;
+  margin: 0 0.5rem;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+}
+.loading{
+  text-align: center;
+  color: #fff;
+  letter-spacing: 0.5px;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+@media (max-width:992px) {
+  .stories_div{
+    grid-template-columns: auto;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width:620px) {
+  .main-story{
+   width: 280px;
+   height: 150px;
+  }
+}
